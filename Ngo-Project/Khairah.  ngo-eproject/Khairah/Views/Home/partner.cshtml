@@ -1,0 +1,160 @@
+﻿@{
+    ViewData["Title"] = "Khairah. Partners";
+}
+
+@model IEnumerable<Khairah_.Models.OurSponsor>
+
+        <nav class="navigation navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" asp-action="Index" asp-controller="Home"><img src="~/userpanel/assets/images/logo/logo.png" alt="logo">Khai<span>rah.</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a  asp-action="Index" asp-controller="Home">Home</a>
+                        </li>
+                        <li><a asp-action="about" asp-controller="Home">About</a></li>
+                        <li class="menu-item-has-children">
+                            <a asp-action="causes" asp-controller="Home">Causes</a>
+                            <ul class="sub-menu">
+                                @await Component.InvokeAsync("NavDropDown")
+                            </ul>
+                        </li>
+                        <li><a asp-action="Khairah_event" asp-controller="Home">Event</a></li>
+
+                        <li><a asp-action="donate" asp-controller="Home">Donate</a></li>
+                        <li><a asp-action="volunteer" asp-controller="Home">Volunteer</a></li>
+
+                        <li><a class="active" asp-action="partner" asp-controller="Home">Our Partners</a></li>
+                        <li><a asp-action="blog" asp-controller="Home">Blog </a></li>
+
+                        <li><a asp-action="contact" asp-controller="Home">Contact</a></li>
+                    </ul>
+                </div><!-- end of nav-collapse -->
+                <div class="cart-search-contact">
+
+            <partial name="_LogoutPartial"></partial>
+                </div>
+            </div><!-- end of container -->
+        </nav>
+    </header>
+    <!-- end of header -->
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="page-title-container">
+        <div class="page-title-wrapper">
+            <div class="container" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <h2>Our Partners</h2>
+                        <ol class="breadcrumb">
+                            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                            <li>Our Partners</li>
+                        </ol>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div>
+    </div>
+</section>
+<!-- end page-title -->
+<!-- event-area start -->
+<div class="event-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="section-title section-title2 text-center">
+                    <div class="thumb-text">
+                        <span>Partners</span>
+                    </div>
+
+                    <h2>Our Valued Partnerships</h2>
+                    <p>We are honored to collaborate with a diverse range of esteemed organizations, each sharing our commitment to fostering positive change and making a meaningful impact in our community. Through strategic partnerships and collective efforts, we work hand in hand with these valued allies to address pressing social issues, drive innovation, and create sustainable solutions that uplift and empower individuals from all walks of life. Together, we believe in the transformative power of collaboration and collective action to build a brighter, more inclusive future for generations to come.</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+                <div class="event-item">
+                    <div class="event-img">
+                        <!-- Replace with an image related to your partners -->
+                        <img src="~/userpanel/assets/images/partners/p1.jpg" style="width: 650px;" alt="Our Partners">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-right">
+                            <!-- Replace with partner details -->
+                            <ul>
+                                <li><i class="ti-location-pin"></i> Collaboration for Impact</li>
+                                <li><i class="ti-location-pin"></i> Strengthening Communities Together</li>
+                            </ul>
+                            <h2><a href="partners.html">Our Partnerships: Driving Positive Change</a></h2>
+                            <p>Delve into our dynamic collaborations and impactful partnerships that are at the forefront of driving positive change and creating lasting impact in our community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-img">
+                        <!-- Replace with an image related to your partners -->
+                        <img src="~/userpanel/assets/images/partners/p3.png" style="width: 650px;" alt="Our Partners">
+                    </div>
+                    <div class="event-text">
+                        <div class="event-right">
+                            <!-- Replace with partner details -->
+                            <ul>
+                                <li><i class="ti-location-pin"></i> Collaborative Impact Initiatives</li>
+                                <li><i class="ti-location-pin"></i> Empowering Communities Together</li>
+                            </ul>
+                            <h2><a href="partners.html">Empowering Change: Our Collaborative Partnerships</a></h2>
+                            <p>Explore our transformative partnerships driving change and empowerment in our community. Join us in fostering collaboration and collective action towards a brighter future.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="shape1"><img src="~/userpanel/assets/images/event/1.png" alt=""></div>
+    <div class="shape2"><img src="~/userpanel/assets/images/event/2.png" alt=""></div>
+</div>
+    <section class="partners-section section-padding">
+        <div class="container">
+            <div class="row brand-row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="section-title section-title2 text-center">
+                        <div class="thumb-text">
+                            <span style="font-weight: bold; color: #333;">Partners</span>
+                        </div>
+                        <h2 style="font-family: Pacifico; color: #333; letter-spacing: 4px; line-height: inherit;">Supporters and Collaborators</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="partner-grids partners-slider">
+                        @foreach(var item in Model){ 
+                        <div class="grid">
+                            <img src="~/Contentimages/partners/@item.SponsorLogo" alt="Sponsor_Logo">
+                        </div>
+                        
+                        }
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </section>
+    </section>
+<!-- event-area start -->

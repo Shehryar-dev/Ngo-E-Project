@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Khairah. Causes";
+}
+
+@model IEnumerable<Khairah_.Models.Cause>
+
+        <nav class="navigation navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" asp-action="Index" asp-controller="Home"><img src="~/userpanel/assets/images/logo/logo.png" alt="logo">Khai<span>rah.</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a  asp-action="Index" asp-controller="Home">Home</a>
+                        </li>
+                        <li><a asp-action="about" asp-controller="Home">About</a></li>
+                        <li class="menu-item-has-children">
+                            <a class="active" asp-action="causes" asp-controller="Home">Causes</a>
+                            <ul class="sub-menu">
+                                @await Component.InvokeAsync("NavDropDown")
+                            </ul>
+                        </li>
+                        <li><a asp-action="Khairah_event" asp-controller="Home">Event</a></li>
+
+                        <li><a asp-action="donate" asp-controller="Home">Donate</a></li>
+                        <li><a asp-action="volunteer" asp-controller="Home">Volunteer</a></li>
+
+                        <li><a asp-action="partner" asp-controller="Home">Our Partners</a></li>
+                        <li><a asp-action="blog" asp-controller="Home">Blog </a></li>
+
+                        <li><a asp-action="contact" asp-controller="Home">Contact</a></li>
+                    </ul>
+                </div><!-- end of nav-collapse -->
+                <div class="cart-search-contact">
+
+            <partial name="_LogoutPartial"></partial>
+                </div>
+            </div><!-- end of container -->
+        </nav>
+    </header>
+    <!-- end of header -->
+<!-- start page-title -->
+<section class="page-title">
+    <div class="page-title-container">
+        <div class="page-title-wrapper">
+            <div class="container" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <h2>Causes</h2>
+                        <ol class="breadcrumb">
+                            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                            <li>Causes</li>
+                        </ol>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div>
+    </div>
+</section>
+<!-- end page-title -->
+<!-- case-area-start -->
+<div class="case-area section-padding">
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="section-title section-title2 text-center">
+                <div class="thumb-text">
+                    <span>CAUSES</span>
+                </div>
+                <h2>Latest Caused of Khairah.</h2>
+                <p>Explore our latest endeavors in Khairah, where we're tackling pressing issues with innovative solutions and unwavering commitment to progress. Join us as we pave the way for positive change and empowerment in the community.</p>
+            </div>
+        </div>
+        <div class="row">
+          @foreach (var item in Model)
+          {
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="cause-item">
+                    <div class="cause-top">
+                        <div class="cause-img">
+                                <img src="~/Contentimages/cause/@item.CImage" alt="">
+                            <div class="case-btn">
+                                <a asp-action="donate" asp-controller="Home" class="theme-btn">Donate Now<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cause-text">
+                        <ul>
+                            <li><a href="#">GOAL : $@item.CGoalAmount</a></li>
+                                    <li>
+                                        <a href="#">
+                                        RISED : $@(item.CRaisedAmount == null ? "$0" : item.CRaisedAmount.ToString())
+                                        </a>
+                                    </li>
+                        </ul>
+                        <h3><a href="causes-single.html">@item.CName</a></h3>
+                        <p>@item.CDesc</p>
+                    </div>
+                </div>
+            </div>
+         }
+        </div>
+    </div>
+</div>
+<!-- case-area-end -->

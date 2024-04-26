@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Khairah. Events";
+}
+
+@model IEnumerable<Khairah_.Models.NgoEvent>
+
+        <nav class="navigation navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" asp-action="Index" asp-controller="Home"><img src="~/userpanel/assets/images/logo/logo.png" alt="logo">Khai<span>rah.</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a asp-action="Index" asp-controller="Home">Home</a>
+                        </li>
+                        <li><a asp-action="about" asp-controller="Home">About</a></li>
+                        <li class="menu-item-has-children">
+                            <a asp-action="causes" asp-controller="Home">Causes</a>
+                            <ul class="sub-menu">
+                                @await Component.InvokeAsync("NavDropDown")
+                            </ul>
+                        </li>
+                        <li><a class="active" asp-action="Khairah_event" asp-controller="Home">Event</a></li>
+
+                        <li><a asp-action="donate" asp-controller="Home">Donate</a></li>
+                        <li><a asp-action="volunteer" asp-controller="Home">Volunteer</a></li>
+
+                        <li><a asp-action="partner" asp-controller="Home">Our Partners</a></li>
+                        <li><a asp-action="blog" asp-controller="Home">Blog </a></li>
+
+                        <li><a asp-action="contact" asp-controller="Home">Contact</a></li>
+                    </ul>
+                </div><!-- end of nav-collapse -->
+                <div class="cart-search-contact">
+
+            <partial name="_LogoutPartial"></partial>
+                </div>
+            </div><!-- end of container -->
+        </nav>
+    </header>
+    <!-- end of header -->
+
+<section class="page-title">
+    <div class="page-title-container">
+        <div class="page-title-wrapper">
+            <div class="container" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <h2>Our Events</h2>
+                        <ol class="breadcrumb">
+                            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                            <li>Events</li>
+                        </ol>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div>
+    </div>
+</section>
+<!-- end page-title -->
+<!-- event-area start -->
+<div class="event-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="section-title section-title2 text-center">
+                    <div class="thumb-text">
+                        <span>EVENTS</span>
+                    </div>
+                    <h2>Our Upcoming Events</h2>
+                    <p>Discover the excitement of our upcoming events, where impactful initiatives and meaningful connections await. Stay tuned for opportunities to engage, learn, and make a difference in our community.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+                    @{
+                        int eventCount = 0; 
+                    }
+
+                    @foreach (var item in Model)
+                    {
+                        if (eventCount < 3) 
+                        {
+                            <div class="event-item">
+                                <div class="event-img">
+                                    <img style="width:400px;height:200px;" src="~/Contentimages/event/@(item.EventImage != null ? item.EventImage : "5.jpg")" alt="Event Image">
+                                </div>
+                                <div class="event-text">
+                                    <div class="event-left">
+                                        <div class="event-l-text">
+                                            @{
+                                                DateTime eventDate = item.EventDate ?? DateTime.MinValue;
+                                            }
+                                            <span>@eventDate.ToString("MMM")</span>
+                                            <h4>@eventDate.ToString("dd")</h4>
+                                        </div>
+                                    </div>
+                                    <div class="event-right">
+                                        <ul>
+                                            <li><i class="ti-location-pin"></i> @item.EventTimeStart - @item.EventTimeEnd</li>
+                                            <li><i class="ti-location-pin"></i> @item.EventLocation</li>
+                                        </ul>
+                                        <h2><a href="#">@item.EventTitle</a></h2>
+                                        <p>@item.EventDescription</p>
+                                    </div>
+                                </div>
+                            </div>
+                            eventCount++; 
+                        }
+                        else
+                        {
+                            break; 
+                        }
+                    }
+
+                                      
+              
+              
+
+      
+
+
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="~/userpanel/assets/images/event/1.png" alt=""></div>
+    <div class="shape2"><img src="~/userpanel/assets/images/event/2.png" alt=""></div>
+</div>
+<!-- event-area start -->

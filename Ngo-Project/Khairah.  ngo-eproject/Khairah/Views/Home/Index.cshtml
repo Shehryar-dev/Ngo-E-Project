@@ -1,0 +1,582 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Khairah_.Models.IndexRecord;
+
+        <nav class="navigation navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" asp-action="Index" asp-controller="Home"><img src="~/userpanel/assets/images/logo/logo.png" alt="logo">Khai<span>rah.</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="active" asp-action="Index" asp-controller="Home">Home</a>
+                        </li>
+                        <li><a asp-action="about" asp-controller="Home">About</a></li>
+                        <li class="menu-item-has-children">
+                            <a asp-action="causes" asp-controller="Home">Causes</a>
+                            <ul class="sub-menu">
+                                @await Component.InvokeAsync("NavDropDown")
+                            </ul>
+                        </li>
+                        <li><a asp-action="Khairah_event" asp-controller="Home">Event</a></li>
+
+                        <li><a asp-action="donate" asp-controller="Home">Donate</a></li>
+                        <li><a asp-action="volunteer" asp-controller="Home">Volunteer</a></li>
+
+                        <li><a asp-action="partner" asp-controller="Home">Our Partners</a></li>
+                        <li><a asp-action="blog" asp-controller="Home">Blog </a></li>
+
+                        <li><a asp-action="contact" asp-controller="Home">Contact</a></li>
+                       
+                    </ul>
+
+                </div><!-- end of nav-collapse -->
+                <div class="cart-search-contact">
+                       <partial name="_LogoutPartial"></partial>
+                </div>
+            </div><!-- end of container -->
+        </nav>
+    </header>
+    <!-- end of header -->
+
+<!-- start of hero -->
+<section class="hero-slider hero-style-1">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-inner slide-bg-image" data-background="userpanel/assets/images/slider/slide-1.jpg">
+                    <div class="container">
+                        <div data-swiper-parallax="200" class="slide-thumb">
+                            <span>GO FOR HELP</span>
+                        </div>
+                        <div data-swiper-parallax="300" class="slide-title">
+                            <h2>They Are Wait For Some Food.</h2>
+                        </div>
+                        <div data-swiper-parallax="400" class="slide-text">
+                            <p>Our NGO's homepage acts as a window into our mission and work. It offers a snapshot of our purpose, key initiatives, and ways to get involved. With captivating visuals and clear messaging, we aim to spark curiosity and encourage further exploration.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div data-swiper-parallax="500" class="slide-btns">
+                            <a asp-action="donate" asp-controller="Home" class="theme-btn">Donate Now<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="slide-shape">
+                        <img src="~/userpanel/assets/images/shape/shape.png" alt="">
+                    </div>
+                </div> <!-- end slide-inner -->
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+                <div class="slide-inner slide-bg-image" data-background="userpanel/assets/images/slider/slide-2.jpg">
+                    <div class="container">
+                        <div data-swiper-parallax="200" class="slide-thumb">
+                            <span>GO FOR HELP</span>
+                        </div>
+                        <div data-swiper-parallax="300" class="slide-title">
+                            <h2>They Are Wait For Some Food.</h2>
+                        </div>
+                        <div data-swiper-parallax="400" class="slide-text">
+                            <p>Our NGO's homepage acts as a window into our mission and work. It offers a snapshot of our purpose, key initiatives, and ways to get involved. With captivating visuals and clear messaging, we aim to spark curiosity and encourage further exploration.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div data-swiper-parallax="500" class="slide-btns">
+                            <a asp-action="donate" asp-controller="Home" class="theme-btn">Donate Now<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="slide-shape">
+                        <img src="~/userpanel/assets/images/shape/shape.png" alt="">
+                    </div>
+                </div> <!-- end slide-inner -->
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+                <div class="slide-inner slide-bg-image" data-background="userpanel/assets/images/slider/slide-3.jpg">
+                    <div class="container">
+                        <div data-swiper-parallax="200" class="slide-thumb">
+                            <span>GO FOR HELP</span>
+                        </div>
+                        <div data-swiper-parallax="300" class="slide-title">
+                            <h2>They Are Wait For Some Food.</h2>
+                        </div>
+                        <div data-swiper-parallax="400" class="slide-text">
+                            <p>Our NGO's homepage acts as a window into our mission and work. It offers a snapshot of our purpose, key initiatives, and ways to get involved. With captivating visuals and clear messaging, we aim to spark curiosity and encourage further exploration.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div data-swiper-parallax="500" class="slide-btns">
+                            <a asp-action="donate" asp-controller="Home" class="theme-btn">
+                                Donate Now<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide-shape">
+                        <img src="~/userpanel/assets/images/shape/shape.png" alt="">
+                    </div>
+                </div> <!-- end slide-inner -->
+            </div> <!-- end swiper-slide -->
+        </div>
+        <!-- end swiper-wrapper -->
+        <!-- swipper controls -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!-- end of hero slider -->
+<!-- about-area start -->
+<div class="about-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12  grid col-12">
+                <div class="about-cercle">
+                    <div class="about-img">
+                        <img src="~/userpanel/assets/images/about/img-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1 grid  col-sm-12 col-12">
+                <div class="about-text">
+                    <div class="section-title">
+                        <div class="thumb-text">
+                            <span>ABOUT US</span>
+                        </div>
+                        <h2>Khairah is <span>Nonprofit</span> Organization <span>For Help</span> Children.</h2>
+                    </div>
+                    <p>In the About Us section, visitors can delve into our organization's history, mission, and values. We highlight our journey, achievements, and the team behind our initiatives. This section aims to foster transparency, trust, and credibility among our supporters.</p>
+                    <div class="ab-icon-area">
+                        <div class="about-icon-wrap">
+                            <div class="about-icon-item">
+                                <div class="ab-icon">
+                                    <img draggable="false" src="~/userpanel/assets/images/about/1.png" alt="">
+                                </div>
+                                <div class="ab-text">
+                                    <h2><a asp-action="cause" asp-controller="Admin">Save <br> Children.</a></h2>
+                                </div>
+                            </div>
+                            <div class="about-icon-item">
+                                <div class="ab-icon ab-icon2">
+                                    <img draggable="false" src="~/userpanel/assets/images/about/2.png" alt="">
+                                </div>
+                                <div class="ab-text">
+                                    <h2><a asp-action="cause" asp-controller="Admin">Fresh And <br> Clean Water.</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ab-shape">
+        <img src="~/userpanel/assets/images/shape/shape2.png" alt="">
+    </div>
+</div>
+<!-- about-area end -->
+<!-- features-area start -->
+<div class="features-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="features-text">
+                    <div class="section-title">
+                        <div class="thumb-text">
+                            <span>FEATURES</span>
+                        </div>
+                    </div>
+                    <h2>The great journey to end poverty for good begins with a child.</h2>
+                    <p>Embark on our transformative journey to eradicate poverty, starting with nurturing the potential of every child.</p>
+                    <a asp-action="donate" asp-controller="Home" class="theme-btn">Donate Now<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="features-wrap">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <img draggable="false" src="~/userpanel/assets/images/features/img-1.png" alt="">
+                                </div>
+                                <div class="features-content">
+                                    <h2><a asp-action="cause" asp-controller="Admin">Cancer Treatment</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="features-item-2">
+                                <div class="features-icon">
+                                    <img draggable="false" src="~/userpanel/assets/images/features/img-2.png" alt="">
+                                </div>
+                                <div class="features-content">
+                                    <h2><a asp-action="cause" asp-controller="Admin">Hospital Build</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="features-item-2 active">
+                                <div class="features-icon">
+                                    <img draggable="false" src="~/userpanel/assets/images/features/img-3.png" alt="">
+                                </div>
+                                <div class="features-content">
+                                    <h2><a asp-action="cause" asp-controller="Admin" >Environtment Recyle</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                    <img draggable="false" src="~/userpanel/assets/images/features/img-4.png" alt="">
+                                </div>
+                                <div class="features-content">
+                                    <h2><a asp-action="cause" asp-controller="Admin">Food & Build Home</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- features-area end -->
+<!-- case-area-start -->
+<div class="case-area section-padding">
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="section-title section-title2 text-center">
+                <div class="thumb-text">
+                    <span>CAUSES</span>
+                </div>
+                <h2>Top 3 Latest Caused of Khairah.</h2>
+                <p>Explore our latest endeavors in Khairah, where we're tackling pressing issues with innovative solutions and unwavering commitment to progress. Join us as we pave the way for positive change and empowerment in the community.</p>
+            </div>
+        </div>
+        <div class="row">
+                @{
+                    int count = 0; 
+                }
+
+                @foreach (var item in Model.Cause)
+                {
+                   
+                    if (count < 3)
+                    {
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="cause-item">
+                                <div class="cause-top">
+                                    <div class="cause-img">
+                                    <img src="~/Contentimages/cause/@item.CImage" alt="">
+                                        <div class="case-btn">
+                                            <a asp-action="donate" asp-controller="Home" class="theme-btn">Donate Now<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cause-text">
+                                    <ul>
+                                    <li><a href="#">GOAL : $@item.CGoalAmount</a></li>
+                                    <li>
+                                        <a href="#">
+                                            RISED : $@(item.CRaisedAmount == null ? "$0" : item.CRaisedAmount.ToString())
+                                        </a>
+                                    </li>
+                                    </ul>
+                                    <h3><a asp-action="cause" asp-controller="Admin">@item.CName</a></h3>
+                                    <p>@item.CDesc</p>
+                                </div>
+                            </div>
+                        </div>
+                        count++; 
+                    }
+                    else
+                    {
+                        break; 
+                    }
+                }
+
+
+        </div>
+    </div>
+</div>
+<!-- case-area-end -->
+<!-- cta-area start -->
+<div class="cta-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="cta-left">
+                    <h2>If You Want To Join With Us As a Volunteer. Contact Us Today!</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-offset-1 col-md-12 col-12">
+                <div class="cta-wrap">
+                    <div class="cta-call">
+                        <span>Call Us!</span>
+                        <h3>+92 000 000 0000</h3>
+                    </div>
+                    <div class="cta-call">
+                        <span>E-mail Us!</span>
+                        <h3>Khairah@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cta-area start -->
+<!-- event-area start -->
+<div class="event-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="section-title section-title2 text-center">
+                    <div class="thumb-text">
+                        <span>EVENTS</span>
+                    </div>
+                    <h2>Our Upcoming Events</h2>
+                    <p>Discover the excitement of our upcoming events, where impactful initiatives and meaningful connections await. Stay tuned for opportunities to engage, learn, and make a difference in our community.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                    @{
+                        int eventCount = 0;
+                    }
+
+                    @foreach (var item in Model.Events)
+                    {
+                        if (eventCount < 3)
+                        {
+                            <div class="event-item">
+                                <div class="event-img">
+                                    <img style="width:400px;height:200px;" src="~/Contentimages/event/@(item.EventImage != null ? item.EventImage : "5.jpg")" alt="Event Image">
+                                </div>
+                                <div class="event-text">
+                                    <div class="event-left">
+                                        <div class="event-l-text">
+                                            @{
+                                                DateTime eventDate = item.EventDate ?? DateTime.MinValue;
+                                            }
+                                            <span>@eventDate.ToString("MMM")</span>
+                                            <h4>@eventDate.ToString("dd")</h4>
+                                        </div>
+                                    </div>
+                                    <div class="event-right">
+                                        <ul>
+                                            <li><i class="ti-location-pin"></i> @item.EventTimeStart - @item.EventTimeEnd</li>
+                                            <li><i class="ti-location-pin"></i> @item.EventLocation</li>
+                                        </ul>
+                                        <h2><a href="#">@item.EventTitle</a></h2>
+                                        <p>@item.EventDescription</p>
+                                    </div>
+                                </div>
+                            </div>
+                            eventCount++;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="~/userpanel/assets/images/event/1.png" alt=""></div>
+    <div class="shape2"><img src="~/userpanel/assets/images/event/2.png" alt=""></div>
+</div>
+<!-- event-area start -->
+<!-- volunteer-area start -->
+<div class="volunteer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="section-title section-title2 text-center">
+                    <div class="thumb-text">
+                        <span>Volunteer</span>
+                    </div>
+                    <h2>Our Great Volunteer</h2>
+                    <p>Celebrate the spirit of service with our exceptional volunteers, whose dedication and passion drive positive change in every endeavor. Join our dynamic team and become a catalyst for impactful transformations in our community.</p>
+                </div>
+            </div>
+        </div>
+        <div class="volunteer-wrap">
+            <div class="row">
+               @foreach(var item in Model.Ngovolunteers){
+                <div class="col col-md-3 col-sm-6 custom-grid col-12">
+                    <div class="volunteer-item">
+                        <div class="volunteer-img">
+                            <img src="~/Contentimages/team/@item.NvImg" alt="@item.NvName Image">
+                        </div>
+                        <div class="volunteer-content">
+                            <h2><a asp-action="volunteer" asp-controller="Home">@item.NvName</a></h2>
+                            <span>Volunteer</span>
+                        </div>
+                    </div>
+                </div>
+                    }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- volunteer-area start -->
+<!-- start testimonials-section-s2 -->
+<section class="testimonials-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="testimonials-slider">
+                    <div class="testimonial-thumb-active">
+                        <div class="test-img">
+                            <img src="~/userpanel/assets/images/testimonials/img-1.png" alt>
+                        </div>
+                        <div class="test-img">
+                            <img src="~/userpanel/assets/images/testimonials/img-2.png" alt>
+                        </div>
+                    </div>
+                    <div class="testimonial-content-active text-center">
+                        <div class="grid">
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><i class="fa fa-star"></i></span></li>
+                                <li><span><i class="fa fa-star"></i></span></li>
+                            </ul>
+                            <p>“Volunteering is the ultimate exercise in democracy. You vote in elections once a year, but when you volunteer, you vote every day about the kind of community you want to live in.”</p>
+                            <div class="info">
+                                <h5>Tawana Blackman</h5>
+                                <p>Volunteer</p>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <ul>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><i class="fa fa-star"></i></span></li>
+                                <li><span><i class="fa fa-star"></i></span></li>
+                            </ul>
+                            <p>“The true measure of a person's worth lies not in the abundance of what they receive, but in the depth of their generosity and compassion towards others. Albert Einstein's profound insight reminds us that our significance is defined by the positive impact we make through selfless acts of giving and service, enriching the lives of those around us and leaving a lasting legacy of kindness and goodwill for generations to come.”</p>
+                            <div class="info">
+                                <h5>Michel Jhone</h5>
+                                <p>Volunteer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+    <div class="testi-shape">
+        <img src="~/userpanel/assets/images/testimonials/img-3.png" alt="">
+    </div>
+    <div class="testi-shape2">
+        <img src="~/userpanel/assets/images/ts.png" alt="">
+    </div>
+</section>
+<!-- end testimonials-section-s2 -->
+<!-- blog-area start -->
+<div class="blog-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="section-title section-title2 text-center">
+                    <div class="thumb-text">
+                        <span>Blog</span>
+                    </div>
+                    <h2>Our Latest News</h2>
+                    <p>Stay informed and inspired with our latest news, reflecting our ongoing commitment to making a difference in the world, one story at a time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-wrap">
+            <div class="row">
+                <div class="col col-md-6 col-12">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="~/userpanel/assets/images/blog/img-1.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <ul>
+                                <li>22 June, 2020</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i>56</li>
+                                <li><i class="fa fa-comments-o" aria-hidden="true"></i> 78</li>
+                            </ul>
+                            <h2><a asp-action="blog" asp-controller="Home">Best and less published their supplier lists.</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-12">
+                    <div class="blog-item">
+                        <div class="blog-content">
+                            <ul>
+                                <li>22 June, 2020</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i>56</li>
+                                <li><i class="fa fa-comments-o" aria-hidden="true"></i> 78</li>
+                            </ul>
+                            <h2><a asp-action="blog" asp-controller="Home">Best and less published their supplier lists.</a></h2>
+                        </div>
+                        <div class="blog-img">
+                            <img src="~/userpanel/assets/images/blog/img-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-12">
+                    <div class="blog-item">
+                        <div class="blog-content">
+                            <ul>
+                                <li>22 June, 2020</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i>56</li>
+                                <li><i class="fa fa-comments-o" aria-hidden="true"></i> 78</li>
+                            </ul>
+                            <h2><a asp-action="blog" asp-controller="Home">Best and less published their supplier lists.</a></h2>
+                        </div>
+                        <div class="blog-img">
+                            <img src="~/userpanel/assets/images/blog/img-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-12">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="~/userpanel/assets/images/blog/img-4.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <ul>
+                                <li>22 June, 2020</li>
+                                <li><i class="fa fa-heart" aria-hidden="true"></i>56</li>
+                                <li><i class="fa fa-comments-o" aria-hidden="true"></i> 78</li>
+                            </ul>
+                            <h2><a asp-action="blog" asp-controller="Home">Best and less published their supplier lists.</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- blog-area start -->
+<!-- start partners-section -->
+<section class="partners-section section-padding">
+    <h2 class="hidden">Partners</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="partner-grids partners-slider">
+                    @foreach(var item in Model.Sponsors){
+
+                    <div class="grid">
+                        <img src="~/Contentimages/partners/@item.SponsorLogo" alt="Sponsor By @item.SponsorName">
+                    </div>
+                        }
+                 
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end partners-section -->

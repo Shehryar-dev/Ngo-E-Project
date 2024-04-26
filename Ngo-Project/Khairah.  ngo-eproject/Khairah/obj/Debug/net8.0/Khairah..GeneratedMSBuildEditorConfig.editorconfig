@@ -1,0 +1,235 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Khairah_
+build_property.RootNamespace = Khairah_
+build_property.ProjectDir = I:\SK ,,,,\3RD SEMESTER\3rd Semester Eproject\Project Work File\Final Eproject\Ngo-Project\Khairah.  ngo-eproject\Khairah\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = I:\SK ,,,,\3RD SEMESTER\3rd Semester Eproject\Project Work File\Final Eproject\Ngo-Project\Khairah.  ngo-eproject\Khairah
+build_property._RazorSourceGeneratorDebug = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/admin_lockscreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRtaW5fbG9ja3NjcmVlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/admin_register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cYWRtaW5fcmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Cause_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F1c2VfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Cause_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F1c2VfZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Cause_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F1c2Vfc2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Cause_T_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F1c2VfVF9hZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Cause_T_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F1c2VfVF9lZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Cause_T_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F1c2VfVF9zaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/donation_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZG9uYXRpb25fc2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/event_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZXZlbnRfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/event_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZXZlbnRfZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/event_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZXZlbnRfc2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Partner_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydG5lcl9hZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Partner_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydG5lcl9lZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Partner_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydG5lcl9zaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/public_feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5ccHVibGljX2ZlZWRiYWNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Role_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZV9hZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Role_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZV9lZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/Role_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZV9zaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/user_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcl9hZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/user_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcl9lZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/user_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdXNlcl9zaG93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/vol_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdm9sX2FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/vol_edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdm9sX2VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/vol_records.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdm9sX3JlY29yZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Admin/vol_show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdm9sX3Nob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxibG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/causes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYXVzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/causes_single.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYXVzZXNfc2luZ2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/donate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkb25hdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/Khairah_event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLaGFpcmFoX2V2ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/partner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYXJ0bmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Home/volunteer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2b2x1bnRlZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/Components/NavDropDown/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2RHJvcERvd25cZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_AdminPanelLogPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pblBhbmVsTG9nUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_AdminPanelprofileImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pblBhbmVscHJvZmlsZUltYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_LogoutPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dvdXRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_UserNamePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTmFtZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ka0hot3wod
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_Layout_admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfYWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qhsa4jwpkd
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_Layout_admin_register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfYWRtaW5fcmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fdrln4cq3h
+
+[I:/SK \,\,\,\,/3RD SEMESTER/3rd Semester Eproject/Project Work File/Final Eproject/Ngo-Project/Khairah.  ngo-eproject/Khairah/Views/Shared/_UserRegister_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyUmVnaXN0ZXJfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-rbf61u9mb6

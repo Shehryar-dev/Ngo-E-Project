@@ -1,0 +1,448 @@
+﻿@{
+    Layout = "_Layout_admin";
+}
+
+@model IEnumerable<Khairah_.Models.User>
+ <!-- START CONTAINER -->
+    <div class="page-container row-fluid">
+
+        <!-- SIDEBAR - START -->
+    <div class="page-sidebar ">
+
+        <!-- MAIN MENU - START -->
+        <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+
+            <!-- USER INFO - START -->
+
+            <partial name="_AdminPanelprofileImage">
+                <!-- USER INFO - END -->
+
+
+            <ul class='wraplist'>
+
+
+                <li >
+                    <a asp-action="Index" asp-controller="Admin">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;" style="font-family: 'Almendra', serif;">Dashboard</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Cause Types Mapping</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" asp-action="Cause_T_add" asp-controller="Admin">Add Cause Type</a>
+                        </li>
+                        <li>
+                            <a class="" asp-action="Cause_T_show" asp-controller="Admin">Show Cause Types</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-ribbon"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Cause Management</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" asp-action="Cause_add" asp-controller="Admin">Add Cause</a>
+                        </li>
+                        <li>
+                            <a class="" asp-action="Cause_show" asp-controller="Admin">Show Causes</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Total Donations</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="donation_show" asp-controller="Admin">Donations Record</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Event Schedule</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="event_add" asp-controller="Admin">Add Event</a>
+                        </li>
+                        <li>
+                            <a asp-action="event_show" asp-controller="Admin">Show Events</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-regular fa-handshake"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Our Sponsored</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" asp-action="Partner_add" asp-controller="Admin">Add Partner</a>
+                        </li>
+                        <li>
+                            <a asp-action="Partner_show" asp-controller="Admin">Show Partners</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Volunteer Data</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="vol_add" asp-controller="Admin">Add Volunteer</a>
+                        </li>
+                        <li>
+                            <a asp-action="vol_show" asp-controller="Admin">Show Volunteers </a>
+                        </li>
+                        <li>
+                            <a asp-action="vol_records" asp-controller="Admin">Volunteers Requests</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Roles</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="Role_add" asp-controller="Admin">Add Role</a>
+                        </li>
+                        <li>
+                            <a asp-action="Role_show" asp-controller="Admin">Show Roles</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="open">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Users</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="user_add" asp-controller="Admin">Add Users</a>
+                        </li>
+                        <li>
+                            <a asp-action="user_show" asp-controller="Admin">Show Users</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-bar-chart"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Reports</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="public_feedback" asp-controller="Admin">Visitors</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Khairah. Location</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="Index" target="_blank" asp-controller="Home">User Panel</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- MAIN MENU - END -->
+
+
+
+        <div class="project-info">
+
+            <div class="block1">
+                <div class="data">
+                    <span class='title'>Donations</span>
+                    <span class='total'>$100b</span>
+                </div>
+                <div class="graph">
+                    <span class="sidebar_orders">...</span>
+                </div>
+            </div>
+
+            <div class="block2">
+                <div class="data">
+                    <span class='title'>total Visitors</span>
+                    <span class='total'>34500</span>
+                </div>
+                <div class="graph">
+                    <span class="sidebar_visitors">...</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!--  SIDEBAR - END -->
+        <!-- START CONTAINER -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+<style>
+    
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+</style>
+        <!-- START CONTENT -->
+        <section id="main-content">
+            <section class="wrapper main-wrapper">
+
+
+                <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <h1 class="title" style="font-family: Pacifico;color: 	#fffffe;">Khai<span style="color: #26b75e;">rah.</span> Admin</h1>
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb" >
+                                <li>
+                                <a asp-action="Index" asp-controller="Admin" style="font-family: 'Almendra';color: #fffffe;"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li class="active">
+                                <a asp-action="user_show" asp-controller="Admin" style="font-family: 'Almendra';color: #fffffe;">User</a>
+                                </li>
+                                <li class="active">
+                                    <strong style=" font-family: 'Almendra', serif;color: 	#fffffe;">All Users</strong>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left" style="font-family: 'Almendra';">All Users</h2>
+                            <div class="actions panel_actions pull-right">
+                                <i class="box_toggle fa fa-chevron-down"></i>
+                                <i class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></i>
+                                <i class="box_close fa fa-times"></i>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row ui-grids">
+                                <div class="col-lg-12">
+                                    <section class="box ">
+                                        <header class="panel_header">
+                                            <!-- <h2 class="title pull-left">Bordered Table</h2> -->
+                                            <div class="actions panel_actions pull-right">
+                                                <i class="box_toggle fa fa-chevron-down"></i>
+                                                <i class="box_setting fa fa-cog" data-toggle="modal"
+                                                    href="#section-settings"></i>
+                                                <i class="box_close fa fa-times"></i>
+                                            </div>
+                                        </header>
+                                        <div class="content-body">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                    <table class="table table-bordered text-center">
+                                                        <thead>
+                                                            <tr >
+                                                                <th class=" text-center">ID</th>
+                                                                <th class=" text-center">User Name</th>
+                                                                <th class=" text-center">User Email</th>
+                                                                <th class=" text-center">User Password</th>
+                                                                <th class=" text-center">User Role</th>
+                                                                <th class=" text-center">Update</th>
+                                                                <th class=" text-center">Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                             @foreach (var item in Model)
+                                                        {
+                                                            <tr>
+
+                                                                <td>
+                                                                    @item.UserId 
+                                                                    </td>
+                                                                <td>
+                                                                @item.UserName    
+                                                                </td>
+                                                                <td>
+                                                                    @item.UserEmail
+                                                                    </td>
+                                                                <td>
+                                                                @item.UserPassword    
+                                                                </td>
+                                                                <td>
+                                                                    @item.UserRole.RoleName
+                                                                    </td>
+                                                                <td>
+                                                                    <a asp-route-id="@item.UserId" asp-controller="Admin" asp-action="user_edit"
+                                                                       class="btn btn-success">
+                                                                        <i class="fa fa-pencil"></i>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <a asp-route-id="@item.UserId" asp-action="user_del" asp-controller="Admin" class="btn btn-danger">
+                                                                        <i class="fa-regular fa-trash-can"></i>
+                                                                    </a>
+                                                                </td>
+
+                                                            </tr>
+                                                        }
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12 h-100">
+
+
+
+
+                                    <div class="row ">
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="col-lg-4 col-md-4 col-sm-6 " style="margin-top:5%;">
+
+
+                                            <!-- <h3 class="card__name"></h3> -->
+                                            <div class="card ">
+                                                <!-- Card content -->
+                                                <div class="card__border">
+                                                    <img src="~/Contentimages/profile/@(item.UserImage != null ? item.UserImage : "us-icon.png")" alt="Profile_Image" class="card__img">
+                                                </div>
+                                                <h3 class="card__name" style="font-family: Pacifico;">
+                                                    @item.UserName
+                                                </h3>
+
+
+                                                <span class="card__profession" style="font-family: 'Almendra';">
+                                                    @item.UserRole.RoleName
+                                                </span>
+
+
+                                                <!-- Card social -->
+                                                <div class="card__social" id="card-social">
+                                                    <div class="card__social-control">
+                                                        <!-- Toggle button -->
+                                                        <div class="card__social-toggle" id="card-toggle">
+                                                            <i class="ri-add-line"></i>
+                                                        </div>
+
+                                                        <span class="card__social-text">My social networks</span>
+
+                                                        <!-- Social links -->
+                                                        <ul class="card__social-list">
+                                                            <a href="https://www.facebook.com/" target="_blank"
+                                                                class="card__social-link">
+                                                                <i class="ri-facebook-line"></i>
+                                                            </a>
+                                                            <a href="https://www.instagram.com/" target="_blank"
+                                                                class="card__social-link">
+                                                                <i class="ri-instagram-line"></i>
+                                                            </a>
+                                                            <a href="https://twitter.com/" target="_blank"
+                                                                class="card__social-link">
+                                                                <i class="ri-twitter-line"></i>
+                                                            </a>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    }                                       
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+            </section>
+        </section>
+        <script src="assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        function showSocial() {
+            // Select all card containers
+            const cardContainers = $('.card');
+
+            cardContainers.each(function () {
+                const toggle = $(this).find('.card__social-toggle');
+                const social = $(this).find('.card__social');
+
+                toggle.on('click', function () {
+                    if (social.hasClass('animation')) {
+                        social.addClass('down-animation');
+                        setTimeout(function () {
+                            social.removeClass('down-animation');
+                        }, 1000);
+                    }
+                    social.toggleClass('animation');
+                });
+            });
+        }
+
+        // Call the function to initialize it
+        showSocial();
+    });
+</script>
+        <!-- END CONTENT -->

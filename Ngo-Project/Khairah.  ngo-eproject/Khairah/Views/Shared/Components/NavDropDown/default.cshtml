@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Khairah_.Models.CauseType>
+
+     @foreach(var item in Model){
+
+
+
+ <li>   <a asp-route-id="@item.CTypeId" class="dropdown-item" asp-controller="Home" asp-action="causes_single">@item.CTypeName</a></li>
+
+    
+}

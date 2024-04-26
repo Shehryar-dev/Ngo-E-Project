@@ -1,0 +1,474 @@
+﻿@{
+    Layout = "_Layout_admin";
+}
+
+@model Khairah_.Models.IndexRecord;
+
+<div class="page-container row-fluid">
+
+    <!-- SIDEBAR - START -->
+    <div class="page-sidebar ">
+
+        <!-- MAIN MENU - START -->
+        <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+
+            <!-- USER INFO - START -->
+
+            <partial name="_AdminPanelprofileImage">
+            <!-- USER INFO - END -->
+
+
+            <ul class='wraplist'>
+
+
+                <li class="open">
+                    <a asp-action="Index" asp-controller="Admin">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Cause Types Mapping</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" asp-action="Cause_T_add" asp-controller="Admin">Add Cause Type</a>
+                        </li>
+                        <li>
+                            <a class="" asp-action="Cause_T_show" asp-controller="Admin">Show Cause Types</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-ribbon"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Cause Management</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" asp-action="Cause_add" asp-controller="Admin">Add Cause</a>
+                        </li>
+                        <li>
+                            <a class="" asp-action="Cause_show" asp-controller="Admin">Show Causes</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Total Donations</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="donation_show" asp-controller="Admin">Donations Record</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Event Schedule</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="event_add" asp-controller="Admin">Add Event</a>
+                        </li>
+                        <li>
+                            <a asp-action="event_show" asp-controller="Admin">Show Events</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-regular fa-handshake"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Our Sponsored</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" asp-action="Partner_add" asp-controller="Admin">Add Partner</a>
+                        </li>
+                        <li>
+                            <a asp-action="Partner_show" asp-controller="Admin">Show Partners</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Volunteer Data</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="vol_add" asp-controller="Admin">Add Volunteer</a>
+                        </li>
+                        <li>
+                            <a asp-action="vol_show" asp-controller="Admin">Show Volunteers </a>
+                        </li>
+                        <li>
+                            <a asp-action="vol_records" asp-controller="Admin">Volunteers Requests</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Roles</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="Role_add" asp-controller="Admin">Add Role</a>
+                        </li>
+                        <li>
+                            <a asp-action="Role_show" asp-controller="Admin">Show Roles</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Users</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="user_add" asp-controller="Admin">Add Users</a>
+                        </li>
+                        <li>
+                            <a asp-action="user_show" asp-controller="Admin">Show Users</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-bar-chart"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Reports</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="public_feedback" asp-controller="Admin">Visitors</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                        <span class="title" style="font-family: 'Almendra', serif;">Khairah. Location</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a asp-action="Index" target="_blank" asp-controller="Home">User Panel</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- MAIN MENU - END -->
+
+
+
+        <div class="project-info">
+
+            <div class="block1">
+                <div class="data">
+                    <span class='title'>Donations</span>
+                    <span class='total'>$100b</span>
+                </div>
+                <div class="graph">
+                    <span class="sidebar_orders">...</span>
+                </div>
+            </div>
+
+            <div class="block2">
+                <div class="data">
+                    <span class='title'>total Visitors</span>
+                    <span class='total'>34500</span>
+                </div>
+                <div class="graph">
+                    <span class="sidebar_visitors">...</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  SIDEBAR - END -->
+    <!-- START CONTENT -->
+    <section id="main-content" >
+        <section class="wrapper main-wrapper">
+
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class="page-title">
+
+                    <div class="pull-left">
+                        <h1 class="title" style="font-family: Pacifico;color: 	#fffffe;">Khai<span style="color: #26b75e;">rah.</span>  Dashboard</h1>
+                    </div>
+
+                    <div class="pull-right hidden-xs">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a asp-action="Index" asp-controller="Admin" style="font-family: 'Almendra', serif;color: 	#fffffe;"><i class="fa fa-home"></i>Dashboard</a>
+                            </li>
+                            
+                            <li class="active">
+                                <strong style=" font-family: 'Almendra', serif;color: 	#fffffe;">Home</strong>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+           
+            <div class="clearfix"></div>
+
+            <div class="col-lg-12">
+                <section class="box ">
+                    <header class="panel_header">
+                        <h2 class="title pull-left">Dashboard</h2>
+                        <div class="actions panel_actions pull-right">
+                            <i class="box_toggle fa fa-chevron-down"></i>
+                            <i class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></i>
+                            <i class="box_close fa fa-times"></i>
+                        </div>
+                    </header>
+                    <div class="content-body">
+                        
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12" style="border-bottom:0.5px dotted #aaa; margin-bottom:2vh;">
+                                    <h1 class="title text-center" style="font-family: Pacifico; color: #333;">
+                                        Khai<span style="color: #26b75e;">rah's</span> Support Statistics
+                                    </h1>
+                                </div>
+                                @if (Model.contacts != null)
+                                {
+                                    int Totalcontact = Model.contacts.Count(); // Get the total number of donations
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="tile-counter bg-secondary" style="font-family: Pacifico;">
+                                            <div class="content">
+                                                <i class="fa-solid fa-comments"></i>
+                                                <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="1" data-to="@Totalcontact">@Totalcontact</h2>
+                                                <div class="clearfix"></div>
+                                                <span style="font-family: Pacifico;">Total Contacts</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                                @if (Model.volrequest != null)
+                                {
+                                    decimal Totalvol = Model.volrequest.Count(); // Get the total donation amount
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="tile-counter bg-orange" style="font-family: Pacifico;">
+                                            <div class="content">
+                                                <i class="fa-solid fa-handshake-angle"></i>
+                                                <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="1" data-to="@Totalvol">@Totalvol</h2>
+                                                <div class="clearfix"></div>
+                                                <span style="font-family: Pacifico;">Total Volunteers Request</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                }
+
+                            </div>
+                            <div class="row" style="padding:1%;">
+                              
+                            @if (Model.Donations != null)
+                            {
+                                int totalDonations = Model.Donations.Count(); // Get the total number of donations
+
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-counter bg-primary" style="font-family: Pacifico;">
+                                        <div class="content">
+                                                <i class='fa fa-line-chart icon-lg'></i>
+                                            <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="1" data-to="@totalDonations">@totalDonations</h2>
+                                            <div class="clearfix"></div>
+                                            <span style="font-family: Pacifico;">Supporters Visited</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                            @if (Model.Donations != null)
+                            {
+                                decimal totalDonationAmount = Model.Donations.Sum(d => d.DAmount ?? 0); // Get the total donation amount
+
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="tile-counter bg-info" style="font-family: Pacifico;">
+                                        <div class="content">
+                                            <i class='fa fa-dollar icon-lg'></i>
+                                            <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="1" data-to="@totalDonationAmount">$@totalDonationAmount</h2>
+                                            <div class="clearfix"></div>
+                                            <span style="font-family: Pacifico;">Total Donation Amount</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                              @if (Model.Sponsors != null)
+                            {
+                                int totalS = Model.Sponsors.Count();
+
+
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="tile-counter bg-purple" style="font-family: Pacifico;">
+                                    <div class="content">
+                                                <i class='fa fa-support  icon-lg'></i>
+                                                <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="0" data-to="@totalS">@totalS</h2>
+                                        <div class="clearfix"></div>
+                                            <span style="font-family: Pacifico;">Sponsorships</span>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                            <div class="row">
+                               
+                                @if (Model.Cause != null)
+                                {
+                                    int TotalCause = Model.Cause.Count(); // Get the total number of donations
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="tile-counter bg-secondary" style="font-family: Pacifico;">
+                                            <div class="content">
+                                                <i class="fa-solid fa-ribbon icon-lg"></i>
+                                                <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="1" data-to="@TotalCause">@TotalCause</h2>
+                                                <div class="clearfix"></div>
+                                                <span style="font-family: Pacifico;">Projects</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                                @if (Model.Events != null)
+                                {
+                                    decimal TotalEvent = Model.Events.Count(); // Get the total donation amount
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="tile-counter bg-orange" style="font-family: Pacifico;">
+                                            <div class="content">
+                                                <i class="fa-regular fa-calendar icon-lg"></i>
+                                                <h2 style="font-family: Pacifico;" class="number_counter" data-speed="3000" data-from="1" data-to="@TotalEvent">@TotalEvent</h2>
+                                                <div class="clearfix"></div>
+                                                <span style="font-family: Pacifico;">Total Donation Amount</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                }
+                                
+                            </div>
+                            <div class="row" >
+                                <div class="col-12" style="border-bottom:0.5px dotted #aaa;">
+                                    <h1 class="title text-center" style="font-family: Pacifico; color: #333;">
+                                        Khai<span style="color: #26b75e;">rah's</span> Top Donors
+                                    </h1>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                    <!-- start -->
+
+                                    <div class="timeline2-centered">
+                                        @{
+                                            var topDonations = Model.Donations.OrderByDescending(d => d.DAmount).Take(3);
+                                        }
+                                        @foreach (var item in topDonations)
+                                        {
+                                            <article class="timeline2-entry">
+                                                <div class="timeline2-entry-inner" style="font-family: 'Almendra';">
+                                                    <div class="timeline2-icon bg-success">
+                                                        <abbr style="border:nonw;" title="Donation ID: @item.DId"><i class="fa-solid fa-envelope"></i></abbr>
+                                                    </div>
+                                                    <div class="timeline2-label">
+                                                        <h2>
+                                                            <a style="font-family: 'Almendra';"><strong>@item.DFirstname @item.DLastname</strong></a>
+                                                            <span style="font-family: 'Almendra';">@item.DEmail</span>
+                                                            <span style="font-family: Pacifico;">@item.DDate.Value.ToString("dd MMM yyyy")</span>
+                                                        </h2>
+                                                        <p style="font-family: Pacifico;">Donation Amount: $@item.DAmount</p>
+                                                        <p>@item.DMessage</p>
+                                                        <p>Thank you for your message! We appreciate your support.</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        }
+                                    </div>
+
+
+                                    <!-- end -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                @if (Model.Donations != null && Model.Donations.Any())
+                                {
+                                    decimal totalDonationAmount = Model.Donations.Sum(d => d.DAmount ?? 0);
+                                    decimal totalPercentage = (totalDonationAmount / (decimal)10000) * 100; // Assuming totalDonationAmount and 10000 are representing the same unit
+
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="wid-sparkgraph bg-primary">
+                                            <span class='bold'>@totalPercentage.ToString("0.00")%</span>
+                                            <span class='pull-right'><small>Support by Donation</small></span>
+                                            <div class="clearfix"></div>
+                                            <span class="wid_dynamicbar">Loading...</span>
+                                        </div>
+                                    </div>
+                                }
+                                @if (Model.Donations != null && Model.Donations.Any())
+                                {
+                                    int totalHighDonationCount = Model.Donations.Count(d => d.DAmount >= 10); // Count donations with amount greater than 10
+
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="wid-sparkgraph bg-purple">
+                                            <span class='bold'>@totalHighDonationCount</span>
+                                            <span class='pull-right'><small>High Value Donations (Above $10)</small></span>
+                                            <div class="clearfix"></div>
+                                            <span class="wid_linesparkline">Loading...</span>
+                                        </div>
+                                    </div>
+                                }
+
+
+                                @if (Model.Donations != null)
+                                {
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="wid-sparkgraph bg-info">
+                                        <span class='bold'>@Model.Donations.Count()</span>
+                                            <span class='pull-right'><small>Donation Statistics</small></span>
+                                        <div class="clearfix"></div>
+                                        <span class="wid_compositebar">Loading...</span>
+                                    </div>
+                                </div>
+                                }
+
+                             </div>
+                         </div>
+                    </div>
+                   
+                </section>
+            </div>
+
+
+        </section>
+    </section>

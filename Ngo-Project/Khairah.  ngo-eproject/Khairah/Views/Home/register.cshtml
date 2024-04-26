@@ -1,0 +1,164 @@
+﻿@{
+    ViewData["Title"] = "Khairah. Register Account";
+
+    Layout = "_UserRegister_Layout";
+}
+
+@model Khairah_.Models.User;
+
+<div class="page-wrapper">
+	<!-- start preloader -->
+	<div class="preloader">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+</div>
+<div id="container" class="container ">
+	<!-- FORM SECTION -->
+	<div class="row">
+		<!-- SIGN UP -->
+		<div class="col align-items-center flex-col sign-up">
+			<div class="form-wrapper align-items-center">
+				<div class="form sign-up">
+					<form method="post" asp-action="sign_up" asp-controller="Home">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" asp-for="UserName" placeholder="Username" required>
+						</div>
+						<div class="input-group">
+							<i class='bx bx-mail-send'></i>
+							<input type="email" asp-for="UserEmail" placeholder="Email"  required>
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" asp-for="UserPassword" placeholder="Password" required>
+						</div>
+						<button type="submit">
+							Sign up
+						</button>
+					</form>
+					<p>
+						<span>
+							Already have an account?
+						</span>
+						<b onclick="toggle()" class="pointer">
+							Sign in here
+						</b>
+					</p>
+				</div>
+			</div>
+			<div class="form-wrapper">
+				<div class="social-list align-items-center sign-up">
+					<div class="align-items-center facebook-bg">
+						<i class='bx bxl-facebook'></i>
+					</div>
+					<div class="align-items-center google-bg">
+						<i class='bx bxl-google'></i>
+					</div>
+					<div class="align-items-center twitter-bg">
+						<i class='bx bxl-twitter'></i>
+					</div>
+					<div class="align-items-center insta-bg">
+						<i class='bx bxl-instagram-alt'></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END SIGN UP -->
+		<!-- SIGN IN -->
+		<div class="col align-items-center flex-col sign-in">
+			<div class="form-wrapper align-items-center">
+				<div class="form sign-in">
+					<form method="post" asp-action="LoginUser" asp-controller="Home">
+						<div class="input-group">
+							<i class='bx bxs-user'></i>
+							<input type="text" asp-for="UserEmail" placeholder="Email" required>
+						
+						</div>
+						<div class="input-group">
+							<i class='bx bxs-lock-alt'></i>
+							<input type="password" asp-for="UserPassword" placeholder="Password" required>
+						</div>
+						<button type="submit">
+							Sign in
+						</button>
+					</form>
+					<p>
+						<b>
+							Forgot password?
+						</b>
+					</p>
+					<p>
+						<span>
+							Don't have an account?
+						</span>
+						<b onclick="toggle()" class="pointer">
+							Sign up here
+						</b>
+					</p>
+				</div>
+			</div>
+			<div class="form-wrapper">
+				<div class="social-list align-items-center sign-in">
+					<div class="align-items-center facebook-bg">
+						<i class='bx bxl-facebook'></i>
+					</div>
+					<div class="align-items-center google-bg">
+						<i class='bx bxl-google'></i>
+					</div>
+					<div class="align-items-center twitter-bg">
+						<i class='bx bxl-twitter'></i>
+					</div>
+					<div class="align-items-center insta-bg">
+						<i class='bx bxl-instagram-alt'></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END SIGN IN -->
+	</div>
+	<!-- END FORM SECTION -->
+	<!-- CONTENT SECTION -->
+	<div class="row content-row">
+		<!-- SIGN IN CONTENT -->
+		<div class="col align-items-center flex-col">
+			<div class="text sign-in">
+				<h2>
+					Join the <a style="text-decoration: none;" asp-action="Index" asp-controller="Home">Khai<span>rah.</span></a> Community
+				</h2>
+				<p>
+					Be a part of the Khairah community and make a difference in the lives of those in need. Together, we can create positive change and bring hope to the less fortunate. Sign up now to start your journey of compassion and generosity with Khairah.
+				</p>
+			</div>
+			<div class="img sign-in">
+				<img src="~/userpanel/assets/images/f-register/undraw_different_love_a3rg.svg" alt="welcome">
+			</div>
+		</div>
+		<!-- END SIGN IN CONTENT -->
+		<!-- SIGN UP CONTENT -->
+		<div class="col align-items-center flex-col">
+			<div class="img sign-up">
+				<img src="~/userpanel/assets/images/f-register/undraw_creative_team_r90h.svg" alt="welcome">
+			</div>
+			<div class="text sign-up">
+				<h2>
+					Join the <a style="text-decoration: none;" asp-action="Index" asp-controller="Home">Khai<span>rah.</span></a> Community
+				</h2>
+				<p>
+					Join us in our mission to make a difference in the world. Together, we can create a brighter future for those in need. Sign up today and be a part of the movement towards positive change and impact. Your contribution matters!
+				</p>
+			</div>
+		</div>
+		<!-- END SIGN UP CONTENT -->
+	</div>
+	<!-- END CONTENT SECTION -->
+</div>
